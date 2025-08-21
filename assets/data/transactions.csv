@@ -1,0 +1,33 @@
+id,user_id,amount,transaction_type,description,related_entity_type,related_entity_id,created_at,processed_by
+1,4,5,credit_earned,Completed Chapter 1 of JavaScript Fundamentals,chapter,1,2024-06-10 14:20:00,system
+2,4,4,credit_earned,Completed Chapter 2 of JavaScript Fundamentals,chapter,2,2024-06-12 09:15:00,system
+3,4,3,credit_earned,Completed Chapter 3 of JavaScript Fundamentals,chapter,3,2024-06-15 16:30:00,system
+4,5,4,credit_earned,Completed Chapter 1 of React Development Bootcamp,chapter,4,2024-07-18 11:45:00,system
+5,5,5,credit_earned,Completed Chapter 2 of React Development Bootcamp,chapter,5,2024-07-22 13:20:00,system
+6,6,3,credit_earned,Completed Chapter 1 of Python for Data Analysis,chapter,7,2024-08-05 10:30:00,system
+7,6,4,credit_earned,Completed Chapter 2 of Python for Data Analysis,chapter,8,2024-08-08 15:45:00,system
+8,6,5,credit_earned,Completed Chapter 1 of Database Design Principles,chapter,10,2024-09-02 09:10:00,system
+9,7,4,credit_earned,Completed Chapter 1 of UI/UX Design Essentials,chapter,13,2024-08-20 12:00:00,system
+10,7,3,credit_earned,Completed Chapter 2 of UI/UX Design Essentials,chapter,14,2024-08-23 16:25:00,system
+14,4,-24,credit_spent,Mentorship session with Sarah Thompson - 2 hours,mentor_session,1,2024-06-20 14:00:00,system
+15,5,-15,credit_spent,Mentorship session with Michael Rodriguez - 1 hour,mentor_session,2,2024-07-25 10:30:00,system
+16,6,-36,credit_spent,Mentorship session with Sarah Thompson - 3 hours,mentor_session,3,2024-09-10 15:20:00,system
+17,8,5,credit_earned,Completed Chapter 1 of JavaScript Fundamentals,chapter,1,2024-09-08 08:45:00,system
+18,8,4,credit_earned,Completed Chapter 2 of JavaScript Fundamentals,chapter,2,2024-09-12 14:30:00,system
+19,9,4,credit_earned,Completed Chapter 1 of Agile Project Management,chapter,31,2024-09-20 10:15:00,system
+20,9,3,credit_earned,Completed Chapter 2 of Agile Project Management,chapter,32,2024-09-25 13:40:00,system
+21,10,3,credit_earned,Completed Chapter 1 of Quality Assurance Testing,chapter,37,2024-10-05 09:25:00,system
+22,10,4,credit_earned,Completed Chapter 2 of Quality Assurance Testing,chapter,38,2024-10-08 11:50:00,system
+23,11,5,credit_earned,Completed Chapter 1 of Machine Learning Basics,chapter,22,2024-10-25 14:10:00,system
+24,11,4,credit_earned,Completed Chapter 2 of Machine Learning Basics,chapter,23,2024-10-30 16:35:00,system
+27,12,3,credit_earned,Completed Chapter 1 of Cybersecurity Fundamentals,chapter,28,2024-11-18 10:20:00,system
+28,13,4,credit_earned,Completed Chapter 1 of Cloud Architecture AWS,chapter,25,2024-12-05 15:30:00,system
+29,13,5,credit_earned,Completed Chapter 2 of Cloud Architecture AWS,chapter,26,2024-12-10 09:45:00,system
+30,14,5,credit_earned,Completed Chapter 1 of Mobile App Development,chapter,19,2024-12-20 11:25:00,system
+31,15,3,credit_earned,Completed Chapter 1 of Advanced CSS Techniques,chapter,34,2024-12-30 14:15:00,system
+32,7,-30,credit_spent,Mentorship session with DevOps Expert - 2 hours,mentor_session,4,2024-09-15 13:00:00,system
+33,9,-20,credit_spent,Mentorship session with Project Manager - 2 hours,mentor_session,5,2024-10-20 10:45:00,system
+34,11,-39,credit_spent,Mentorship session with Data Science Expert - 3 hours,mentor_session,6,2024-11-25 16:00:00,system
+35,4,50,credit_earned,Admin bonus for chapter completion streak,manual_adjustment,0,2024-07-01 12:00:00,admin1
+36,6,25,credit_earned,Community contribution reward,manual_adjustment,0,2024-09-15 14:30:00,admin1
+37,8,10,credit_earned,Beta testing participation bonus,manual_adjustment,0,2024-09-30 16:45:00,admin1

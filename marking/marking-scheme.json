@@ -1,0 +1,324 @@
+{
+  "totalMark": 20,
+  "wsosSections": {
+    "1": "Work organization and self-management",
+    "2": "Communication and interpersonal skills",
+    "3": "Design Implementation",
+    "4": "Front-End Development",
+    "5": "Back-End Development"
+  },
+  "subCriterions": [
+    {
+      "name": "Project Structure and Database Design",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Database schema properly normalized with required tables",
+          "maxMark": 0.75,
+          "wsosSection": 1,
+          "extraDescription": "Database includes users, courses, chapters, mentors, credits, and activity logs with proper normalization",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Sample data successfully imported from JSON file",
+          "maxMark": 0.5,
+          "wsosSection": 1,
+          "extraDescription": "All provided JSON data is correctly imported and structured in the database",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Required user accounts with correct passwords",
+          "maxMark": 0.25,
+          "wsosSection": 1,
+          "extraDescription": "Zeus Helmet (admin@ssa.org) and Alice Johnson (alice@example.com) have specified passwords",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "SQL dump file provided in db/db-dump.sql",
+          "maxMark": 0.25,
+          "wsosSection": 1,
+          "extraDescription": "Complete database dump is available for deployment verification",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Code organization and project structure",
+          "maxMark": 0.25,
+          "wsosSection": 1,
+          "judgementScoreDescription": [
+            "Poor project organization with mixed concerns and unclear structure",
+            "Basic organization with some separation of concerns but inconsistent patterns",
+            "Good organization following framework conventions with clear separation",
+            "Excellent organization with modular structure, clear separation of concerns, and maintainable architecture"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Administrative Interface Communication",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Clear and consistent administrative navigation",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Dashboard, Learner Management, Course Management, and Mentor Management navigation is intuitive",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Appropriate error messages and user feedback",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Login errors, form validation, and system feedback are clear and helpful to administrators",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Database Schema and System Architecture",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Proper foreign key relationships between entities",
+          "maxMark": 1,
+          "wsosSection": 3,
+          "extraDescription": "Users, courses, chapters, mentors, and credit transactions are properly linked",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Data integrity constraints and validation",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Database constraints prevent invalid data entry and maintain referential integrity",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Credit system data model implementation",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Credit earning, spending, and balance tracking are properly modeled in the database",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Overall database design quality and normalization",
+          "maxMark": 1,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "Poor database design with denormalization issues and data redundancy",
+            "Basic design with some normalization but missing key relationships or constraints",
+            "Good normalized design with proper relationships and most constraints in place",
+            "Excellent normalized design with optimal structure, comprehensive constraints, and efficient indexing"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Administrative interface layout and usability",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "Poor layout with confusing navigation and unclear administrative workflows",
+            "Basic administrative layout but some usability issues for admin tasks",
+            "Good layout with clear administrative sections and intuitive workflow",
+            "Excellent administrative interface with optimal layout for administrative efficiency and clear task organization"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Server-Side Rendering and Frontend Implementation",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Server-side rendering framework properly implemented",
+          "maxMark": 1,
+          "wsosSection": 4,
+          "extraDescription": "All pages are rendered server-side, not through client-side API calls",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Responsive administrative interface design",
+          "maxMark": 0.75,
+          "wsosSection": 4,
+          "extraDescription": "Interface works well on different screen sizes suitable for administrative tasks",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "SkillShare Academy branding and color scheme",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Purple-orange-cyan color scheme and branding elements are applied consistently",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Form handling and user input management",
+          "maxMark": 0.75,
+          "wsosSection": 4,
+          "judgementScoreDescription": [
+            "Poor form handling with basic validation and unclear error messaging",
+            "Basic form handling with some validation but inconsistent user feedback",
+            "Good form handling with proper validation and clear error messaging",
+            "Excellent form handling with comprehensive validation, clear feedback, and smooth user experience"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Authentication and Security Implementation",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Secure password hashing implementation",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Passwords are properly hashed using secure algorithms (bcrypt, etc.)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Role-based access control for admin users",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Only users with admin role can access administrative functions",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Session management with proper timeout",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "User sessions are managed securely with appropriate timeout mechanisms",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Protection against SQL injection",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Prepared statements or ORM used to prevent SQL injection attacks",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Input validation and sanitization",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "All user inputs are validated and sanitized to prevent XSS and other attacks",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Overall security implementation and OWASP compliance",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "judgementScoreDescription": [
+            "Poor security implementation with multiple vulnerabilities and minimal OWASP compliance",
+            "Basic security measures but missing key protections and incomplete OWASP compliance",
+            "Good security implementation with most OWASP guidelines followed and key vulnerabilities addressed",
+            "Excellent comprehensive security implementation with full OWASP compliance and robust protection measures"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Administrative Functionality Implementation",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Dashboard with platform statistics and recent activities",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Shows user counts, course counts, mentor counts, credit totals, and recent activity feed",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Learner management with search, filtering, and account control",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Search by name/email, filter by status, pagination, suspend/enable functionality",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Course management CRUD operations",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Create, edit, delete courses with proper confirmation and chapter preservation",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Mentor management with approval workflow",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "View mentor details, manage approval status, and activate accounts",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Administrative workflow efficiency and data integrity",
+          "maxMark": 1.25,
+          "wsosSection": 5,
+          "judgementScoreDescription": [
+            "Poor administrative workflows with confusing processes and potential data integrity issues",
+            "Basic administrative functions work but workflows are not optimized for efficiency",
+            "Good administrative workflows with clear processes and proper data integrity maintenance",
+            "Excellent streamlined administrative workflows with optimal efficiency and comprehensive data integrity safeguards"
+          ]
+        }
+      ]
+    }
+  ]
+}

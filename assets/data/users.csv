@@ -1,0 +1,16 @@
+id,username,email,role,status,credit_balance,first_name,last_name
+1,admin1,admin1@skillshare.academy,admin,active,0,System,Administrator
+2,mentor1,mentor1@skillshare.academy,mentor,active,0,Sarah,Johnson
+3,mentor2,mentor2@skillshare.academy,mentor,active,0,Michael,Chen
+4,learner1,learner1@skillshare.academy,user,active,127,Emma,Wilson
+5,learner2,learner2@skillshare.academy,user,active,89,David,Brown
+6,alex_dev,alex.dev@email.com,user,active,203,Alex,Rodriguez
+7,maria_data,maria.data@email.com,user,active,156,Maria,Garcia
+8,john_ui,john.ui@email.com,user,active,74,John,Thompson
+9,linda_pm,linda.pm@email.com,user,active,245,Linda,Anderson
+10,robert_qa,robert.qa@email.com,user,active,92,Robert,Martinez
+11,sophia_ai,sophia.ai@email.com,user,active,318,Sophia,Lee
+12,james_sec,james.sec@email.com,user,active,67,James,Taylor
+13,anna_cloud,anna.cloud@email.com,user,active,189,Anna,White
+14,tom_mobile,tom.mobile@email.com,user,active,134,Tom,Davis
+15,rachel_analyst,rachel.analyst@email.com,user,active,78,Rachel,Miller

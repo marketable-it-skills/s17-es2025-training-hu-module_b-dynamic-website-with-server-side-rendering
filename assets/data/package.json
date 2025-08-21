@@ -1,0 +1,17 @@
+{
+  "name": "csv-to-mysql-converter",
+  "version": "1.0.0",
+  "description": "Convert SkillShare Academy CSV files to MySQL dump",
+  "main": "csv-to-mysql.js",
+  "scripts": {
+    "convert": "node csv-to-mysql.js",
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {},
+  "keywords": ["csv", "mysql", "conversion", "skillshare-academy"],
+  "author": "EuroSkills 2025",
+  "license": "MIT"
+}

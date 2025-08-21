@@ -1,0 +1,670 @@
+{
+    "mentors": [
+        {
+            "mentorName": "Sarah Johnson",
+            "expertise": "Frontend Development",
+            "experienceLevel": "senior",
+            "hourlyCreditRate": "15",
+            "bio": "Senior frontend developer with 8+ years of experience in React, Vue.js, and modern web technologies. Passionate about creating intuitive user experiences and mentoring developers.",
+            "yearsExperience": "8",
+            "approvalStatus": "approved",
+            "averageRating": "4.8",
+            "registrationDate": "2025-08-10 14:23:00.000"
+        },
+        {
+            "mentorName": "Michael Brown",
+            "expertise": "Backend Development",
+            "experienceLevel": "senior",
+            "hourlyCreditRate": "14",
+            "bio": "Experienced backend developer specializing in Node.js, Python, and database design. Expert in building scalable APIs and microservices architecture.",
+            "yearsExperience": "10",
+            "approvalStatus": "approved",
+            "averageRating": "4.7",
+            "registrationDate": "2025-08-12 09:47:00.000"
+        },
+        {
+            "mentorName": "Lisa Wang",
+            "expertise": "UI/UX Design",
+            "experienceLevel": "mid",
+            "hourlyCreditRate": "12",
+            "bio": "Creative UI/UX designer with 5 years of experience in user-centered design, prototyping, and design systems. Focused on creating beautiful and functional interfaces.",
+            "yearsExperience": "5",
+            "approvalStatus": "approved",
+            "averageRating": "4.6",
+            "registrationDate": "2025-08-15 16:35:00.000"
+        },
+        {
+            "mentorName": "David Rodriguez",
+            "expertise": "DevOps",
+            "experienceLevel": "senior",
+            "hourlyCreditRate": "15",
+            "bio": "DevOps engineer with 9 years of experience in CI/CD, cloud infrastructure, and automation. Expert in AWS, Docker, and Kubernetes.",
+            "yearsExperience": "9",
+            "approvalStatus": "approved",
+            "averageRating": "4.9",
+            "registrationDate": "2025-08-08 11:12:00.000"
+        },
+        {
+            "mentorName": "Emma Chen",
+            "expertise": "Data Science",
+            "experienceLevel": "mid",
+            "hourlyCreditRate": "13",
+            "bio": "Data scientist with 6 years of experience in machine learning, statistical analysis, and data visualization. Passionate about turning data into actionable insights.",
+            "yearsExperience": "6",
+            "approvalStatus": "approved",
+            "averageRating": "4.5",
+            "registrationDate": "2025-08-17 13:58:00.000"
+        },
+        {
+            "mentorName": "James Wilson",
+            "expertise": "Mobile Development",
+            "experienceLevel": "mid",
+            "hourlyCreditRate": "12",
+            "bio": "Mobile app developer with 5 years of experience in React Native, iOS, and Android development. Focused on creating smooth, native-like mobile experiences.",
+            "yearsExperience": "5",
+            "approvalStatus": "approved",
+            "averageRating": "4.4",
+            "registrationDate": "2025-08-09 10:41:00.000"
+        },
+        {
+            "mentorName": "Maria Garcia",
+            "expertise": "Machine Learning",
+            "experienceLevel": "senior",
+            "hourlyCreditRate": "15",
+            "bio": "Senior ML engineer with 11 years of experience in deep learning, computer vision, and natural language processing. Expert in TensorFlow and PyTorch.",
+            "yearsExperience": "11",
+            "approvalStatus": "approved",
+            "averageRating": "4.8",
+            "registrationDate": "2025-08-14 15:29:00.000"
+        },
+        {
+            "mentorName": "Alex Kim",
+            "expertise": "Cybersecurity",
+            "experienceLevel": "mid",
+            "hourlyCreditRate": "13",
+            "bio": "Cybersecurity specialist with 7 years of experience in penetration testing, security auditing, and threat analysis. Certified ethical hacker and security consultant.",
+            "yearsExperience": "7",
+            "approvalStatus": "approved",
+            "averageRating": "4.7",
+            "registrationDate": "2025-08-19 12:06:00.000"
+        },
+        {
+            "mentorName": "Jennifer Lee",
+            "expertise": "Cloud Architecture",
+            "experienceLevel": "senior",
+            "hourlyCreditRate": "14",
+            "bio": "Cloud architect with 10 years of experience in designing and implementing scalable cloud solutions. Expert in AWS, Azure, and Google Cloud Platform.",
+            "yearsExperience": "10",
+            "approvalStatus": "approved",
+            "averageRating": "4.6",
+            "registrationDate": "2025-08-11 08:33:00.000"
+        },
+        {
+            "mentorName": "Robert Taylor",
+            "expertise": "JavaScript",
+            "experienceLevel": "junior",
+            "hourlyCreditRate": "8",
+            "bio": "Junior JavaScript developer with 2 years of experience in modern JavaScript, ES6+, and web development fundamentals. Enthusiastic about helping beginners learn.",
+            "yearsExperience": "2",
+            "approvalStatus": "approved",
+            "averageRating": "4.3",
+            "registrationDate": "2025-08-13 14:17:00.000"
+        },
+        {
+            "mentorName": "Amanda Davis",
+            "expertise": "Python Development",
+            "experienceLevel": "mid",
+            "hourlyCreditRate": "11",
+            "bio": "Python developer with 4 years of experience in web development, automation, and data processing. Passionate about clean code and best practices.",
+            "yearsExperience": "4",
+            "approvalStatus": "approved",
+            "averageRating": "4.5",
+            "registrationDate": "2025-08-16 11:52:00.000"
+        },
+        {
+            "mentorName": "Thomas Anderson",
+            "expertise": "API Development",
+            "experienceLevel": "senior",
+            "hourlyCreditRate": "14",
+            "bio": "Senior API developer with 9 years of experience in RESTful APIs, GraphQL, and API design patterns. Expert in building robust and scalable API solutions.",
+            "yearsExperience": "9",
+            "approvalStatus": "approved",
+            "averageRating": "4.7",
+            "registrationDate": "2025-08-18 16:08:00.000"
+        },
+        {
+            "mentorName": "Sophia Martinez",
+            "expertise": "Blockchain Development",
+            "experienceLevel": "mid",
+            "hourlyCreditRate": "13",
+            "bio": "Blockchain developer with 4 years of experience in smart contracts, DeFi protocols, and cryptocurrency development. Passionate about Web3 and decentralized applications.",
+            "yearsExperience": "4",
+            "approvalStatus": "unapproved",
+            "averageRating": "0.0",
+            "registrationDate": "2025-08-18 10:15:00.000"
+        },
+        {
+            "mentorName": "Kevin O'Connor",
+            "expertise": "Game Development",
+            "experienceLevel": "junior",
+            "hourlyCreditRate": "9",
+            "bio": "Game developer with 3 years of experience in Unity, C#, and game design principles. Focused on creating engaging gameplay experiences and interactive storytelling.",
+            "yearsExperience": "3",
+            "approvalStatus": "unapproved",
+            "averageRating": "0.0",
+            "registrationDate": "2025-08-18 14:30:00.000"
+        },
+        {
+            "mentorName": "Rachel Green",
+            "expertise": "Product Management",
+            "experienceLevel": "senior",
+            "hourlyCreditRate": "16",
+            "bio": "Senior product manager with 12 years of experience in agile methodologies, user research, and product strategy. Expert in leading cross-functional teams and delivering successful products.",
+            "yearsExperience": "12",
+            "approvalStatus": "unapproved",
+            "averageRating": "0.0",
+            "registrationDate": "2025-08-18 09:45:00.000"
+        }
+    ],
+    "users": [
+        {
+            "firstName": "Zeus",
+            "lastName": "Helmet",
+            "email": "admin@ssa.org",
+            "role": "admin",
+            "registrationDate": "2025-08-10 14:23:00.000"
+        },
+        {
+            "firstName": "Alice",
+            "lastName": "Johnson",
+            "email": "alice@example.com",
+            "role": "learner",
+            "registrationDate": "2025-08-10 14:23:00.000"
+        },
+        {
+            "firstName": "Bob",
+            "lastName": "Smith",
+            "email": "bob@example.com",
+            "role": "learner",
+            "registrationDate": "2025-08-12 09:47:00.000"
+        },
+        {
+            "firstName": "Carol",
+            "lastName": "Davis",
+            "email": "carol@example.com",
+            "role": "learner",
+            "registrationDate": "2025-08-15 16:35:00.000"
+        },
+        {
+            "firstName": "David",
+            "lastName": "Wilson",
+            "email": "david@example.com",
+            "role": "mentor",
+            "registrationDate": "2025-08-08 11:12:00.000"
+        },
+        {
+            "firstName": "Eva",
+            "lastName": "Rodriguez",
+            "email": "eva@example.com",
+            "role": "learner",
+            "registrationDate": "2025-08-17 13:58:00.000"
+        },
+        {
+            "firstName": "Frank",
+            "lastName": "Chen",
+            "email": "frank@example.com",
+            "role": "admin",
+            "registrationDate": "2025-08-09 10:41:00.000"
+        },
+        {
+            "firstName": "Grace",
+            "lastName": "Kim",
+            "email": "grace@example.com",
+            "role": "learner",
+            "registrationDate": "2025-08-14 15:29:00.000"
+        },
+        {
+            "firstName": "Henry",
+            "lastName": "Taylor",
+            "email": "henry@example.com",
+            "role": "learner",
+            "registrationDate": "2025-08-19 12:06:00.000"
+        }
+    ],
+    "courses": [
+        {
+            "title": "Web Development Fundamentals",
+            "description": "Learn the basics of HTML, CSS, and JavaScript for modern web development",
+            "difficulty": "beginner",
+            "chapters": [
+                {
+                    "title": "HTML Structure and Semantics",
+                    "description": "Learn proper HTML document structure and semantic elements",
+                    "credits": "4"
+                },
+                {
+                    "title": "CSS Styling and Layout",
+                    "description": "Master CSS selectors, properties, and layout techniques",
+                    "credits": "4"
+                },
+                {
+                    "title": "JavaScript Basics",
+                    "description": "Variables, functions, and control structures in JavaScript",
+                    "credits": "5"
+                },
+                {
+                    "title": "DOM Manipulation",
+                    "description": "Interact with HTML elements using JavaScript",
+                    "credits": "4"
+                },
+                {
+                    "title": "Responsive Design",
+                    "description": "Create websites that work on all device sizes",
+                    "credits": "5"
+                },
+                {
+                    "title": "Web Forms and Validation",
+                    "description": "Build interactive forms with proper validation",
+                    "credits": "4"
+                }
+            ]
+        },
+        {
+            "title": "Advanced React Development",
+            "description": "Master React hooks, context, and advanced patterns for scalable applications",
+            "difficulty": "advanced",
+            "chapters": [
+                {
+                    "title": "React Hooks Deep Dive",
+                    "description": "useState, useEffect, and custom hooks mastery",
+                    "credits": "5"
+                },
+                {
+                    "title": "Context API and State Management",
+                    "description": "Global state management without Redux",
+                    "credits": "5"
+                },
+                {
+                    "title": "Performance Optimization",
+                    "description": "React.memo, useMemo, and useCallback techniques",
+                    "credits": "5"
+                },
+                {
+                    "title": "Advanced Component Patterns",
+                    "description": "Render props, HOCs, and compound components",
+                    "credits": "5"
+                },
+                {
+                    "title": "Testing React Applications",
+                    "description": "Unit and integration testing with Jest and RTL",
+                    "credits": "4"
+                }
+            ]
+        },
+        {
+            "title": "Introduction to Python",
+            "description": "Start your programming journey with Python basics and practical applications",
+            "difficulty": "beginner",
+            "chapters": [
+                {
+                    "title": "Python Syntax and Variables",
+                    "description": "Basic Python syntax, data types, and variables",
+                    "credits": "3"
+                },
+                {
+                    "title": "Control Flow and Functions",
+                    "description": "Loops, conditionals, and function definitions",
+                    "credits": "4"
+                },
+                {
+                    "title": "Data Structures in Python",
+                    "description": "Lists, dictionaries, sets, and tuples",
+                    "credits": "4"
+                },
+                {
+                    "title": "File I/O and Exception Handling",
+                    "description": "Working with files and handling errors gracefully",
+                    "credits": "4"
+                },
+                {
+                    "title": "Object-Oriented Programming",
+                    "description": "Classes, objects, and inheritance in Python",
+                    "credits": "5"
+                }
+            ]
+        },
+        {
+            "title": "Database Design & SQL",
+            "description": "Learn relational database concepts and SQL querying techniques",
+            "difficulty": "intermediate",
+            "chapters": [
+                {
+                    "title": "Database Fundamentals",
+                    "description": "RDBMS concepts, normalization, and ER diagrams",
+                    "credits": "4"
+                },
+                {
+                    "title": "Basic SQL Queries",
+                    "description": "SELECT, WHERE, ORDER BY, and basic joins",
+                    "credits": "4"
+                },
+                {
+                    "title": "Advanced SQL Operations",
+                    "description": "Subqueries, window functions, and complex joins",
+                    "credits": "5"
+                },
+                {
+                    "title": "Database Design Patterns",
+                    "description": "Schema design best practices and optimization",
+                    "credits": "5"
+                }
+            ]
+        },
+        {
+            "title": "Node.js Backend Development",
+            "description": "Build scalable server-side applications with Node.js and Express",
+            "difficulty": "intermediate",
+            "chapters": [
+                {
+                    "title": "Node.js Fundamentals",
+                    "description": "Event loop, modules, and npm package management",
+                    "credits": "4"
+                },
+                {
+                    "title": "Express.js Framework",
+                    "description": "Building web servers and REST APIs with Express",
+                    "credits": "5"
+                },
+                {
+                    "title": "Database Integration",
+                    "description": "Connecting to databases and ORM usage",
+                    "credits": "4"
+                },
+                {
+                    "title": "Authentication and Security",
+                    "description": "JWT tokens, password hashing, and security best practices",
+                    "credits": "5"
+                },
+                {
+                    "title": "API Testing and Documentation",
+                    "description": "Testing APIs and creating comprehensive documentation",
+                    "credits": "4"
+                }
+            ]
+        },
+        {
+            "title": "UI/UX Design Principles",
+            "description": "Master the fundamentals of user interface and user experience design",
+            "difficulty": "beginner",
+            "chapters": [
+                {
+                    "title": "Design Thinking Process",
+                    "description": "User research, personas, and problem definition",
+                    "credits": "4"
+                },
+                {
+                    "title": "Visual Design Principles",
+                    "description": "Color theory, typography, and layout composition",
+                    "credits": "4"
+                },
+                {
+                    "title": "Wireframing and Prototyping",
+                    "description": "Creating low and high-fidelity prototypes",
+                    "credits": "4"
+                },
+                {
+                    "title": "Usability Testing",
+                    "description": "User testing methods and feedback implementation",
+                    "credits": "3"
+                },
+                {
+                    "title": "Accessibility in Design",
+                    "description": "Creating inclusive designs for all users",
+                    "credits": "4"
+                }
+            ]
+        },
+        {
+            "title": "DevOps and Deployment",
+            "description": "Learn continuous integration, deployment, and infrastructure management",
+            "difficulty": "advanced",
+            "chapters": [
+                {
+                    "title": "CI/CD Pipeline Setup",
+                    "description": "Continuous integration and deployment workflows",
+                    "credits": "5"
+                },
+                {
+                    "title": "Container Orchestration",
+                    "description": "Kubernetes basics and container management",
+                    "credits": "5"
+                },
+                {
+                    "title": "Infrastructure as Code",
+                    "description": "Terraform and infrastructure automation",
+                    "credits": "5"
+                },
+                {
+                    "title": "Monitoring and Logging",
+                    "description": "Application monitoring and log management",
+                    "credits": "4"
+                }
+            ]
+        },
+        {
+            "title": "Mobile App Development",
+            "description": "Create cross-platform mobile applications using React Native",
+            "difficulty": "intermediate",
+            "chapters": [
+                {
+                    "title": "React Native Fundamentals",
+                    "description": "Mobile development with React Native",
+                    "credits": "5"
+                },
+                {
+                    "title": "Navigation and State",
+                    "description": "App navigation and state management patterns",
+                    "credits": "4"
+                },
+                {
+                    "title": "Native Device Features",
+                    "description": "Camera, GPS, and device API integration",
+                    "credits": "5"
+                },
+                {
+                    "title": "App Store Deployment",
+                    "description": "Publishing to iOS and Android app stores",
+                    "credits": "4"
+                }
+            ]
+        },
+        {
+            "title": "Machine Learning Basics",
+            "description": "Introduction to ML concepts, algorithms, and practical implementations",
+            "difficulty": "intermediate",
+            "chapters": [
+                {
+                    "title": "ML Algorithms Overview",
+                    "description": "Supervised, unsupervised, and reinforcement learning",
+                    "credits": "5"
+                },
+                {
+                    "title": "Data Preprocessing",
+                    "description": "Data cleaning, feature engineering, and normalization",
+                    "credits": "4"
+                },
+                {
+                    "title": "Model Training and Evaluation",
+                    "description": "Training ML models and performance metrics",
+                    "credits": "5"
+                },
+                {
+                    "title": "Practical ML Projects",
+                    "description": "Real-world machine learning implementations",
+                    "credits": "5"
+                }
+            ]
+        },
+        {
+            "title": "Cybersecurity Fundamentals",
+            "description": "Essential security concepts and practices for modern applications",
+            "difficulty": "intermediate",
+            "chapters": []
+        },
+        {
+            "title": "Cloud Computing with AWS",
+            "description": "Learn Amazon Web Services and cloud architecture patterns",
+            "difficulty": "advanced",
+            "chapters": []
+        },
+        {
+            "title": "JavaScript ES6+ Features",
+            "description": "Modern JavaScript features and best practices for clean code",
+            "difficulty": "intermediate",
+            "chapters": []
+        },
+        {
+            "title": "Docker and Containerization",
+            "description": "Master containerization with Docker and orchestration basics",
+            "difficulty": "intermediate",
+            "chapters": []
+        },
+        {
+            "title": "Git Version Control",
+            "description": "Essential Git commands and workflow strategies for team collaboration",
+            "difficulty": "beginner",
+            "chapters": []
+        },
+        {
+            "title": "API Design and Development",
+            "description": "Best practices for designing and building RESTful APIs",
+            "difficulty": "intermediate",
+            "chapters": []
+        },
+        {
+            "title": "Frontend Testing Strategies",
+            "description": "Unit testing, integration testing, and e2e testing for web apps",
+            "difficulty": "advanced",
+            "chapters": []
+        },
+        {
+            "title": "Agile Project Management",
+            "description": "Scrum, Kanban, and agile methodologies for software development",
+            "difficulty": "beginner",
+            "chapters": []
+        },
+        {
+            "title": "Data Structures & Algorithms",
+            "description": "Essential CS concepts for technical interviews and problem solving",
+            "difficulty": "intermediate",
+            "chapters": []
+        }
+    ],
+    "chapterCompleted": [
+        {
+            "userEmail": "alice@example.com",
+            "courseName": "Web Development Fundamentals",
+            "chapterName": "HTML Structure and Semantics",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-11 14:30:00.000"
+        },
+        {
+            "userEmail": "alice@example.com",
+            "courseName": "Web Development Fundamentals",
+            "chapterName": "CSS Styling and Layout",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-12 16:45:00.000"
+        },
+        {
+            "userEmail": "bob@example.com",
+            "courseName": "Introduction to Python",
+            "chapterName": "Python Syntax and Variables",
+            "creditsEarned": "3",
+            "completionDate": "2025-08-13 10:15:00.000"
+        },
+        {
+            "userEmail": "bob@example.com",
+            "courseName": "Introduction to Python",
+            "chapterName": "Control Flow and Functions",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-14 09:30:00.000"
+        },
+        {
+            "userEmail": "carol@example.com",
+            "courseName": "UI/UX Design Principles",
+            "chapterName": "Design Thinking Process",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-16 11:20:00.000"
+        },
+        {
+            "userEmail": "carol@example.com",
+            "courseName": "UI/UX Design Principles",
+            "chapterName": "Visual Design Principles",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-17 15:45:00.000"
+        },
+        {
+            "userEmail": "eva@example.com",
+            "courseName": "Advanced React Development",
+            "chapterName": "React Hooks Deep Dive",
+            "creditsEarned": "5",
+            "completionDate": "2025-08-18 13:10:00.000"
+        },
+        {
+            "userEmail": "eva@example.com",
+            "courseName": "Advanced React Development",
+            "chapterName": "Context API and State Management",
+            "creditsEarned": "5",
+            "completionDate": "2025-08-19 10:25:00.000"
+        },
+        {
+            "userEmail": "grace@example.com",
+            "courseName": "Database Design & SQL",
+            "chapterName": "Database Fundamentals",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-15 08:40:00.000"
+        },
+        {
+            "userEmail": "grace@example.com",
+            "courseName": "Database Design & SQL",
+            "chapterName": "Basic SQL Queries",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-16 14:55:00.000"
+        },
+        {
+            "userEmail": "henry@example.com",
+            "courseName": "Node.js Backend Development",
+            "chapterName": "Node.js Fundamentals",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-19 16:20:00.000"
+        },
+        {
+            "userEmail": "alice@example.com",
+            "courseName": "Web Development Fundamentals",
+            "chapterName": "JavaScript Basics",
+            "creditsEarned": "5",
+            "completionDate": "2025-08-13 12:35:00.000"
+        },
+        {
+            "userEmail": "bob@example.com",
+            "courseName": "Introduction to Python",
+            "chapterName": "Data Structures in Python",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-15 17:50:00.000"
+        },
+        {
+            "userEmail": "carol@example.com",
+            "courseName": "UI/UX Design Principles",
+            "chapterName": "Wireframing and Prototyping",
+            "creditsEarned": "4",
+            "completionDate": "2025-08-18 09:15:00.000"
+        },
+        {
+            "userEmail": "eva@example.com",
+            "courseName": "Machine Learning Basics",
+            "chapterName": "ML Algorithms Overview",
+            "creditsEarned": "5",
+            "completionDate": "2025-08-08 11:40:00.000"
+        }
+    ]
+}

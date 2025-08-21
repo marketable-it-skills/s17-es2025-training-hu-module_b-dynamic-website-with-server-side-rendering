@@ -1,0 +1,35 @@
+{
+  "name": "ES2025 S17 - Module B",
+  "displayName": "Dynamic Website with Server-Side Rendering",
+  "description": "Administrative interface for SkillShare Academy platform management using server-side rendering techniques.",
+  "url": "https://github.com/skillsit/es2025-s17-training-competition-hu-module_b",
+  "skillDomains": ["Web Technologies", "Server-Side Development", "Database Management"],
+  "competition": "EuroSkills 2025 Training Competition Hungary",
+  "tags": ["SSR", "Admin Interface", "Laravel", "Express.js", "MySQL", "OWASP", "Role-Based Access"],
+  "duration": "4 hours",
+  "totalPoints": 20,
+  "theme": "SkillShare Academy Administrative Management",
+  "moduleType": "Administrative Interface",
+  "technicalRequirements": {
+    "frameworks": ["Laravel 11.x", "Express.js 4.18+"],
+    "database": "MySQL 8.0",
+    "templating": ["Blade", "EJS", "Handlebars"],
+    "deployment": "Docker",
+    "authentication": "Session-based with role management",
+    "security": "OWASP compliance"
+  },
+  "learningObjectives": [
+    "Server-side development with administrative interfaces",
+    "Role-based authentication and authorization",
+    "Database design for complex administrative systems",
+    "Security implementation for sensitive data management",
+    "CRUD operations with audit trails"
+  ],
+  "assessmentFocus": [
+    "Administrative functionality implementation",
+    "Security measures and access control",
+    "Database design and data integrity",
+    "Server-side rendering and templating",
+    "Code quality and organization"
+  ]
+}

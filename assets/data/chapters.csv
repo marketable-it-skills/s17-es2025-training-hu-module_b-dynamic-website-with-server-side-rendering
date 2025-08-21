@@ -1,0 +1,40 @@
+id,course_id,title,description,credit_reward
+1,1,Variables and Data Types,"Learn JavaScript variable declarations and primitive data types",5
+2,1,Functions and Scope,"Master function declarations and understanding scope in JavaScript",4
+3,1,DOM Manipulation,"Interactive web page manipulation using JavaScript DOM API",3
+4,2,Component Architecture,"Understanding React components and component lifecycle",4
+5,2,State and Props,"Managing component state and passing props between components",5
+6,2,Event Handling,"Handling user interactions and form submissions in React",3
+7,3,Pandas Fundamentals,"Data manipulation and analysis using pandas library",3
+8,3,NumPy Arrays,"Numerical computing and array operations with NumPy",4
+9,3,Data Visualization,"Creating charts and graphs with matplotlib and seaborn",5
+10,4,Database Normalization,"Understanding database normalization principles and forms",5
+11,4,SQL Query Optimization,"Writing efficient SQL queries and understanding indexes",4
+12,4,Relationship Design,"Designing foreign keys and database relationships",3
+13,5,Design Principles,"Fundamental UI/UX design principles and best practices",4
+14,5,User Research Methods,"Conducting user research and usability testing",3
+15,5,Prototyping Tools,"Creating wireframes and prototypes using design tools",5
+16,6,Container Fundamentals,"Understanding Docker containers and containerization",5
+17,6,Docker Compose,"Orchestrating multi-container applications with Docker Compose",4
+18,6,CI/CD Pipelines,"Setting up continuous integration and deployment workflows",3
+19,7,React Native Setup,"Setting up React Native development environment",5
+20,7,Navigation and Routing,"Implementing navigation between screens in mobile apps",4
+21,7,Native API Integration,"Accessing device APIs like camera and GPS",3
+22,8,ML Algorithms Overview,"Introduction to supervised and unsupervised learning",5
+23,8,Data Preprocessing,"Cleaning and preparing data for machine learning models",4
+24,8,Model Evaluation,"Evaluating model performance and avoiding overfitting",3
+25,9,AWS Core Services,"Understanding EC2, S3, and other foundational AWS services",4
+26,9,Auto Scaling and Load Balancing,"Implementing scalable architecture with AWS services",5
+27,9,Security Best Practices,"Securing cloud applications and infrastructure",3
+28,10,Threat Modeling,"Identifying and analyzing potential security threats",5
+29,10,Secure Coding Practices,"Writing secure code and preventing common vulnerabilities",4
+30,10,Security Testing,"Performing security audits and penetration testing",3
+31,12,Scrum Framework,"Understanding Scrum roles, events, and artifacts",4
+32,12,Sprint Planning,"Planning and estimating work for development sprints",3
+33,12,Retrospectives,"Conducting effective retrospectives and continuous improvement",5
+34,13,CSS Grid Layout,"Mastering CSS Grid for complex responsive layouts",3
+35,13,Flexbox Advanced,"Advanced flexbox techniques and layout patterns",4
+36,13,CSS Animations,"Creating smooth animations and transitions with CSS",5
+37,15,Test Strategy,"Developing comprehensive testing strategies and test plans",3
+38,15,Automated Testing,"Implementing automated testing frameworks and tools",4
+39,15,Quality Metrics,"Measuring and improving software quality metrics",5
