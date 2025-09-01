@@ -158,7 +158,25 @@
           "wsosSection": 3,
           "extraDescription": "Test: Table shows Activity, Learner/Mentor, and Time columns with realistic relative time format (1h ago, 2d ago, etc.)",
           "calculation": {
-            "type": "pass-or-fail"
+            "type": "options",
+            "options": [
+              {
+                "description": "Last 6 activities are displayed correctly",
+                "value": 0.5
+              },
+              {
+                "description": "One is missing/incorrect",
+                "value": 0.35
+              },
+              {
+                "description": "Two is missing/incorrect",
+                "value": 0.15
+              },
+              {
+                "description": "Three or more are missing/incorrect",
+                "value": 0
+              }
+            ]
           }
         },
         {
@@ -260,7 +278,25 @@
           "wsosSection": 5,
           "extraDescription": "Test: Page shows courses with title, description, difficulty, total chapters, and total credits",
           "calculation": {
-            "type": "pass-or-fail"
+            "type": "options",
+            "options": [
+              {
+                "description": "Courses are displayed correctly",
+                "value": 1
+              },
+              {
+                "description": "One is missing/incorrect",
+                "value": 0.75
+              },
+              {
+                "description": "Two is missing/incorrect",
+                "value": 0.5
+              },
+              {
+                "description": "Three or more are missing/incorrect",
+                "value": 0
+              }
+            ]
           }
         },
         {
@@ -305,7 +341,25 @@
           "wsosSection": 5,
           "extraDescription": "Test: Page shows mentors with name, hourly credit rate, years of experience, average rating, approval status",
           "calculation": {
-            "type": "pass-or-fail"
+            "type": "options",
+            "options": [
+              {
+                "description": "Mentors are displayed correctly",
+                "value": 0.5
+              },
+              {
+                "description": "One is missing/incorrect",
+                "value": 0.35
+              },
+              {
+                "description": "Two is missing/incorrect",
+                "value": 0.15
+              },
+              {
+                "description": "Three or more are missing/incorrect",
+                "value": 0
+              }
+            ]
           }
         },
         {
