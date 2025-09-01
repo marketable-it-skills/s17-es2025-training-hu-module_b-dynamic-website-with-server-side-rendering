@@ -9,44 +9,54 @@
   },
   "subCriterions": [
     {
-      "name": "Project Structure and Database Design",
+      "name": "Project Structure and Database Setup",
       "aspects": [
         {
           "type": "measurement",
-          "description": "Database schema properly normalized with required tables",
+          "description": "Required database tables exist with proper structure",
           "maxMark": 0.75,
           "wsosSection": 1,
-          "extraDescription": "Database includes users, courses, chapters, mentors, credits, and activity logs with proper normalization",
+          "extraDescription": "Test: Check database contains users, courses, chapters, mentors, enrollments, credit_transactions, mentor_sessions tables with correct column names and types",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Sample data successfully imported from JSON file",
+          "description": "Database normalization and relationships",
+          "maxMark": 0.75,
+          "wsosSection": 1,
+          "extraDescription": "Test: Verify foreign key constraints exist (course_id in chapters, user_id in mentors, etc.) and can query related data successfully",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Sample data successfully imported",
           "maxMark": 0.5,
           "wsosSection": 1,
-          "extraDescription": "All provided JSON data is correctly imported and structured in the database",
+          "extraDescription": "Test: Database contains realistic data for all entities - users, courses, mentors with expected relationships",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Required user accounts with correct passwords",
-          "maxMark": 0.25,
+          "description": "Required admin accounts with correct passwords",
+          "maxMark": 0.5,
           "wsosSection": 1,
-          "extraDescription": "Zeus Helmet (admin@ssa.org) and Alice Johnson (alice@example.com) have specified passwords",
+          "extraDescription": "Test: Login with admin@ssa.org/skills2025admin1 and alice@example.com/WtfiA? both succeed and show admin interface",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "SQL dump file provided in db/db-dump.sql",
-          "maxMark": 0.25,
+          "description": "SQL dump file provided at correct location",
+          "maxMark": 0.5,
           "wsosSection": 1,
-          "extraDescription": "Complete database dump is available for deployment verification",
+          "extraDescription": "Test: File db/db-dump.sql exists and contains complete database schema with data",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -54,7 +64,7 @@
         {
           "type": "judgement",
           "description": "Code organization and project structure",
-          "maxMark": 0.25,
+          "maxMark": 0.5,
           "wsosSection": 1,
           "judgementScoreDescription": [
             "Poor project organization with mixed concerns and unclear structure",
@@ -66,24 +76,44 @@
       ]
     },
     {
-      "name": "Administrative Interface Communication",
+      "name": "Authentication and Access Control",
       "aspects": [
         {
           "type": "measurement",
-          "description": "Clear and consistent administrative navigation",
-          "maxMark": 0.5,
+          "description": "Login page accessible and functional",
+          "maxMark": 0.25,
           "wsosSection": 2,
-          "extraDescription": "Dashboard, Learner Management, Course Management, and Mentor Management navigation is intuitive",
+          "extraDescription": "Test: Navigate to /login, form contains username/password fields and submits correctly",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Appropriate error messages and user feedback",
-          "maxMark": 0.5,
+          "description": "Invalid login credentials show appropriate error",
+          "maxMark": 0.25,
           "wsosSection": 2,
-          "extraDescription": "Login errors, form validation, and system feedback are clear and helpful to administrators",
+          "extraDescription": "Test: Login with wrong password displays clear error message and prevents access",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Non-admin users cannot access admin interface",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "extraDescription": "Test: Login with regular user account redirects away from admin pages or shows access denied",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Successful login redirects to dashboard",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "extraDescription": "Test: Admin login automatically redirects to /dashboard and displays admin interface",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -91,140 +121,234 @@
       ]
     },
     {
-      "name": "Database Schema and System Architecture",
+      "name": "Dashboard Implementation",
       "aspects": [
         {
           "type": "measurement",
-          "description": "Proper foreign key relationships between entities",
-          "maxMark": 1,
-          "wsosSection": 3,
-          "extraDescription": "Users, courses, chapters, mentors, and credit transactions are properly linked",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Data integrity constraints and validation",
-          "maxMark": 0.75,
-          "wsosSection": 3,
-          "extraDescription": "Database constraints prevent invalid data entry and maintain referential integrity",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Credit system data model implementation",
-          "maxMark": 0.75,
-          "wsosSection": 3,
-          "extraDescription": "Credit earning, spending, and balance tracking are properly modeled in the database",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "judgement",
-          "description": "Overall database design quality and normalization",
-          "maxMark": 1,
-          "wsosSection": 3,
-          "judgementScoreDescription": [
-            "Poor database design with denormalization issues and data redundancy",
-            "Basic design with some normalization but missing key relationships or constraints",
-            "Good normalized design with proper relationships and most constraints in place",
-            "Excellent normalized design with optimal structure, comprehensive constraints, and efficient indexing"
-          ]
-        },
-        {
-          "type": "judgement",
-          "description": "Administrative interface layout and usability",
+          "description": "Platform statistics display correctly",
           "maxMark": 0.5,
           "wsosSection": 3,
-          "judgementScoreDescription": [
-            "Poor layout with confusing navigation and unclear administrative workflows",
-            "Basic administrative layout but some usability issues for admin tasks",
-            "Good layout with clear administrative sections and intuitive workflow",
-            "Excellent administrative interface with optimal layout for administrative efficiency and clear task organization"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Server-Side Rendering and Frontend Implementation",
-      "aspects": [
-        {
-          "type": "measurement",
-          "description": "Server-side rendering framework properly implemented",
-          "maxMark": 1,
-          "wsosSection": 4,
-          "extraDescription": "All pages are rendered server-side, not through client-side API calls",
+          "extraDescription": "Test: Dashboard shows counts for registered learners, total courses, active mentors, and total credits earned",
           "calculation": {
-            "type": "pass-or-fail"
+            "type": "options",
+            "options": [
+              {
+                "description": "All stats are displayed correctly",
+                "value": 0.5
+              },
+              {
+                "description": "One is missing/incorrect",
+                "value": 0.35
+              },
+              {
+                "description": "Two is missing/incorrect",
+                "value": 0.15
+              },
+              {
+                "description": "Three or more are missing/incorrect",
+                "value": 0
+              }
+            ]
           }
         },
         {
           "type": "measurement",
-          "description": "Responsive administrative interface design",
-          "maxMark": 0.75,
-          "wsosSection": 4,
-          "extraDescription": "Interface works well on different screen sizes suitable for administrative tasks",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "SkillShare Academy branding and color scheme",
+          "description": "Recent activities table displays last 6 activities",
           "maxMark": 0.5,
-          "wsosSection": 4,
-          "extraDescription": "Purple-orange-cyan color scheme and branding elements are applied consistently",
+          "wsosSection": 3,
+          "extraDescription": "Test: Table shows Activity, Learner/Mentor, and Time columns with realistic relative time format (1h ago, 2d ago, etc.)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Quick navigation links to management pages",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Test: Dashboard contains working links to Learner Management, Course Management, and Mentor Management pages",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "judgement",
-          "description": "Form handling and user input management",
-          "maxMark": 0.75,
-          "wsosSection": 4,
+          "description": "Dashboard layout and visual design",
+          "maxMark": 1,
+          "wsosSection": 3,
           "judgementScoreDescription": [
-            "Poor form handling with basic validation and unclear error messaging",
-            "Basic form handling with some validation but inconsistent user feedback",
-            "Good form handling with proper validation and clear error messaging",
-            "Excellent form handling with comprehensive validation, clear feedback, and smooth user experience"
+            "Poor dashboard layout with confusing information presentation and unclear navigation",
+            "Basic dashboard layout but some usability issues for quick administrative overview",
+            "Good dashboard with clear sections and intuitive layout for administrative tasks",
+            "Excellent dashboard with optimal layout, clear information hierarchy, and efficient administrative workflow"
           ]
         }
       ]
     },
     {
-      "name": "Authentication and Security Implementation",
+      "name": "Learner Management Functionality",
       "aspects": [
         {
           "type": "measurement",
-          "description": "Secure password hashing implementation",
-          "maxMark": 1,
-          "wsosSection": 5,
-          "extraDescription": "Passwords are properly hashed using secure algorithms (bcrypt, etc.)",
+          "description": "Learner list displays with required information",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Page shows learner list with name, email, chapters completed, credits earned, and account status",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Role-based access control for admin users",
-          "maxMark": 1,
-          "wsosSection": 5,
-          "extraDescription": "Only users with admin role can access administrative functions",
+          "description": "Search functionality by name or email",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Single search input filters learners by entering partial name or email, results update dynamically",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Session management with proper timeout",
+          "description": "Status filtering dropdown works correctly",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Test: Filter dropdown shows All, Active, Suspended options and filters learners when selection changes",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Clear filters button resets search and filter",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Test: Clear filters button resets search input and filter dropdown, showing all learners",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Pagination controls display 10 learners per page",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Test: Page shows maximum 10 learners with Previous/Next buttons and page numbers for navigation",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Suspend and enable account functionality",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Buttons to suspend/enable users work and update status in database and interface immediately",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Course Management Functionality",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Course list displays with complete information",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Test: Page shows courses with title, description, difficulty, total chapters, and total credits",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Create new course functionality",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Test: Create course button opens form, saves new course with all fields, and updates course list",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Edit course form with chapter editing button",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Test: Edit button opens populated form, includes inactive 'Edit Chapters' button as specified",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Delete course with confirmation dialog",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Test: Delete shows custom confirmation dialog (not browser popup), removes course and chapters but preserves completion records",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mentor Management Functionality",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Mentor list displays complete information",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Test: Page shows mentors with name, hourly credit rate, years of experience, average rating, approval status",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Mentor approval workflow functionality",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Test: Approve button for pending mentors changes status to active and updates interface immediately",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Security Implementation",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Passwords securely hashed in database",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Test: Check database shows hashed passwords (bcrypt/similar), not plain text passwords",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Role-based access control enforced",
           "maxMark": 0.75,
           "wsosSection": 5,
-          "extraDescription": "User sessions are managed securely with appropriate timeout mechanisms",
+          "extraDescription": "Test: Admin pages are inaccessible to non-admin users, redirect or show access denied",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Session management with logout functionality",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "Test: Logout button ends session, subsequent admin page access requires re-login",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -232,90 +356,90 @@
         {
           "type": "measurement",
           "description": "Protection against SQL injection",
-          "maxMark": 1,
+          "maxMark": 0.75,
           "wsosSection": 5,
-          "extraDescription": "Prepared statements or ORM used to prevent SQL injection attacks",
+          "extraDescription": "Test: Form inputs use prepared statements/ORM, SQL injection attempts in search fields do not execute",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Input validation and sanitization",
+          "description": "Input validation and XSS protection",
           "maxMark": 0.75,
           "wsosSection": 5,
-          "extraDescription": "All user inputs are validated and sanitized to prevent XSS and other attacks",
+          "extraDescription": "Test: Form inputs are validated, XSS attempts in form fields are escaped/sanitized in output",
           "calculation": {
             "type": "pass-or-fail"
           }
-        },
-        {
-          "type": "judgement",
-          "description": "Overall security implementation and OWASP compliance",
-          "maxMark": 0.5,
-          "wsosSection": 5,
-          "judgementScoreDescription": [
-            "Poor security implementation with multiple vulnerabilities and minimal OWASP compliance",
-            "Basic security measures but missing key protections and incomplete OWASP compliance",
-            "Good security implementation with most OWASP guidelines followed and key vulnerabilities addressed",
-            "Excellent comprehensive security implementation with full OWASP compliance and robust protection measures"
-          ]
         }
       ]
     },
     {
-      "name": "Administrative Functionality Implementation",
+      "name": "User Interface and Branding",
       "aspects": [
         {
           "type": "measurement",
-          "description": "Dashboard with platform statistics and recent activities",
-          "maxMark": 1,
-          "wsosSection": 5,
-          "extraDescription": "Shows user counts, course counts, mentor counts, credit totals, and recent activity feed",
+          "description": "SkillShare Academy branding and logo display",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Test: Header contains SkillShare Academy logo and branding elements consistently across all pages",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Learner management with search, filtering, and account control",
-          "maxMark": 1,
-          "wsosSection": 5,
-          "extraDescription": "Search by name/email, filter by status, pagination, suspend/enable functionality",
+          "description": "Purple-orange-cyan color scheme implementation",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Test: Interface uses specified purple-orange-cyan color palette consistently in buttons, headers, and UI elements",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Course management CRUD operations",
-          "maxMark": 1,
-          "wsosSection": 5,
-          "extraDescription": "Create, edit, delete courses with proper confirmation and chapter preservation",
+          "description": "User information display and logout access",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Test: Header shows logged-in admin name and logout button is accessible from all pages",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Mentor management with approval workflow",
-          "maxMark": 0.75,
-          "wsosSection": 5,
-          "extraDescription": "View mentor details, manage approval status, and activate accounts",
+          "description": "Consistent navigation across all admin pages",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Test: All admin pages have same header, navigation menu with Dashboard, Learner Management, Course Management, Mentor Management",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "judgement",
-          "description": "Administrative workflow efficiency and data integrity",
-          "maxMark": 1.25,
+          "description": "Overall interface design and responsiveness",
+          "maxMark": 1.5,
+          "wsosSection": 4,
+          "judgementScoreDescription": [
+            "Poor interface design with layout issues and poor responsiveness for administrative tasks",
+            "Basic interface design but some usability issues and limited responsiveness",
+            "Good interface design with clear layout and adequate responsiveness for desktop admin use",
+            "Excellent interface design with professional appearance, optimal responsiveness, and superior user experience"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Administrative workflow efficiency and data presentation",
+          "maxMark": 0.5,
           "wsosSection": 5,
           "judgementScoreDescription": [
-            "Poor administrative workflows with confusing processes and potential data integrity issues",
+            "Poor administrative workflows with confusing processes and unclear data presentation",
             "Basic administrative functions work but workflows are not optimized for efficiency",
-            "Good administrative workflows with clear processes and proper data integrity maintenance",
-            "Excellent streamlined administrative workflows with optimal efficiency and comprehensive data integrity safeguards"
+            "Good administrative workflows with clear processes and well-organized data presentation",
+            "Excellent streamlined administrative workflows with optimal efficiency and intuitive data management"
           ]
         }
       ]
