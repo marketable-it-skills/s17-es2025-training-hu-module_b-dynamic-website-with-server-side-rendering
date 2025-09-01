@@ -213,7 +213,25 @@
           "wsosSection": 4,
           "extraDescription": "Test: Page shows learner list with name, email, chapters completed, credits earned, and account status",
           "calculation": {
-            "type": "pass-or-fail"
+            "type": "options",
+            "options": [
+              {
+                "description": "Learners are displayed correctly",
+                "value": 0.5
+              },
+              {
+                "description": "One is missing/incorrect",
+                "value": 0.35
+              },
+              {
+                "description": "Two is missing/incorrect",
+                "value": 0.15
+              },
+              {
+                "description": "Three or more are missing/incorrect",
+                "value": 0
+              }
+            ]
           }
         },
         {
